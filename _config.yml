@@ -284,7 +284,7 @@ compress_html:
 defaults:
   # _docs
   - scope:
-      path: ""
+      path: "_docs"
       type: docs
     values:
       layout: single
