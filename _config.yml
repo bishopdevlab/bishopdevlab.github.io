@@ -12,10 +12,10 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : mmistakes/minimal-mistakes
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "Bishop's Development Lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -108,10 +108,10 @@ analytics:
 # Site Author
 author:
   name             : "Yong-il Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bishop.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "Korea, Republic of"
-  email            :
+  email            : "dbjavapia@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
