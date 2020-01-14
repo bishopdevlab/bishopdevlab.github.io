@@ -1,12 +1,12 @@
 ---
 layout: page
-title: ETC
-subtitle: Here, a stack for remainders.
+title: Research & Development
+subtitle: 
 use-site-title: true
 ---
 
 <div class="posts-list">
-    {% assign posts = site.ETC | sort:"date" | reverse %}
+    {% assign posts = site.RND | sort:"date" | reverse %}
     {% for post in posts %}
       {% if post.url contains 'index' %}
         {% continue %}

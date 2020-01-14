@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Diary
-subtitle: Here, you will find out much about me.
+title: Free Note
+subtitle: About everything in the world
 use-site-title: true
 ---
 <div class="posts-list">
-  {% assign posts = site.Diary | sort:"date" | reverse %}
+  {% assign posts = site.FreeNote | sort:"date" | reverse %}
   {% for post in posts %}
     {% if post.url contains 'index' %}
       {% continue %}

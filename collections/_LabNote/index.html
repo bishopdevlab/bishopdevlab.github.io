@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Books
-subtitle: Here, we will cherish the scent of books.
+title: Laboratory Notebook
+subtitle: 
 use-site-title: true
 ---
 
 <div class="posts-list">
-    {% assign posts = site.Books | sort:"date" | reverse %}
+    {% assign posts = site.LabNote | sort:"date" | reverse %}
     {% for post in posts %}
       {% if post.url contains 'index' %}
         {% continue %}
