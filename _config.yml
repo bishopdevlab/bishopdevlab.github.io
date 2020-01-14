@@ -43,7 +43,7 @@ description: Here, you'll find out much about me.
 navbar-links:
   Home: "index"
   Blog:
-    - Free Note: Free Note
+    - FreeNote: FreeNote
     - Development: Development
     - LaboratoryNotebook: Laboratory_Notebook
     - Portfolio: Portfolio
