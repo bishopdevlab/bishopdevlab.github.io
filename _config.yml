@@ -45,7 +45,6 @@ navbar-links:
   Blog:
     - FreeNote: FreeNote
     - Development: Development
-    - LaboratoryNotebook: Laboratory_Notebook
     - Portfolio: Portfolio
   About Me: "aboutme"
 
