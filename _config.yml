@@ -44,8 +44,8 @@ navbar-links:
   Home: "index"
   Blog:
     - FreeNote: Free Note
-    - RND: Research & Development
-    - LabNote: Laboratory Notebook
+    - Development: Development
+    - LaboratoryNotebook: Laboratory_Notebook
     - Portfolio: Portfolio
   About Me: "aboutme"
 
@@ -92,7 +92,7 @@ author:
 social-network-links:
   email: "dbjavapia@gmail.com"
   github: "bishopdevlab"
-  rss: true
+#  rss: true
 #  facebook: daattali
 #  twitter: daattali
 #  reddit: yourname
