@@ -18,22 +18,19 @@ Visual Studio Code는 무료로 사용이 가능하다. [MS 공식 사이트](ht
 
 VS Code에서 포스트를 작성하고 Github Desktop을 사용하여 commit, push를 할 수도 있지만, VS Code 하나로도 모든 과정이 가능하기 때문에 필요한 경우만 Github Desktop을 사용하고 주로 VS Code를 사용하기로 하였다.
 우선 VSCode에서 Git을 사용하려면 로컬에 Git을 설치해야 한다. [Git 공식 사이트](https://gitforwindows.org/)에서 Git for Windows를 다운로드하여 설치한다. 설치 방법은 많은 사이트에서 소개하고 있기에 생략한다. 단, Defalt Editor 선택 화면에서 "Use Visual Studio Code as Git's default editor"를 선택한다.
+
 ![Default Editor 선택](/../../assets/images/2020-01-19-VSCode-Github-make-pages/2020-01-19-VSCode-Github-make-pages_2020-01-20-00-46-16.png)
 
 ## VS Code에서 Git 설정
 
-VS Code를 실행한 후 "Source Control" 메뉴를 클릭한다.
-
-![소스제어 메뉴](/../../assets/images/2020-01-19-VSCode-Github-make-pages/2020-01-19-VSCode-Github-make-pages_2020-02-03-01-31-12.png)
-
-"레파지토리 초기화" 버튼을 클릭하여 폴더를 선택하면 버전관리가 시작된다.
+VS Code를 실행한 후 "Source Control" 메뉴를 클릭한 후 "레파지토리 초기화" 버튼을 클릭하여 폴더를 선택하면 버전관리가 시작된다.
 
 ![레파지토리 초기화 버튼](/../../assets/images/2020-01-19-VSCode-Github-make-pages/2020-01-19-VSCode-Github-make-pages_2020-02-03-01-32-28.png)
 
 이제 Git의 기능을 이용할 수 있게 되었다.
 Workspace의 파일을 추가 및 편집 후 소스제어 화면으로 이동하면 변경된 리스트를 보여주는데, + 표시를 클릭하면 해당 파일이 "stage changes"로 변경된다. "CHANGES"의 +를 클릭하면 변경된 모든 파일을 한번에 적용할 수 있다.
 
-![Stage changes](/../../assets/images/2020-01-19-VSCode-Github-make-pages/2020-01-19-VSCode-Github-make-pages_2020-02-03-01-37-43.png)
+![Source Control: GIT](/../../assets/images/2020-01-19-VSCode-Github-make-pages/2020-01-19-VSCode-Github-make-pages_2020-02-03-01-44-01.png)
 
 이후 상단에 Commit(체크) 버튼을 클릭하면 변경 파일들이 Commit되고, "More Actions"에서 Push 버튼을 클릭하면 원격 레파지토리에 push된다.
 
