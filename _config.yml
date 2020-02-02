@@ -2,19 +2,13 @@
 
 collections_dir: collections
 collections:
-  Diary:
+  Free_Note:
     output: true
     permalink: /:collection/:name
-  Books:
+  Development:
     output: true
     permalink: /:collection/:name
-  Travel:
-    output: true
-    permalink: /:collection/:name
-  Machine_Learning:
-    output: true
-    permalink: /:collection/:name
-  ETC:
+  Portfolio:
     output: true
     permalink: /:collection/:name
 
