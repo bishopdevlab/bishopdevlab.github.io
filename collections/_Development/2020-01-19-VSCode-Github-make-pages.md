@@ -3,7 +3,7 @@ layout: post
 title: Github pages 작성하기
 subtitle: 윈도우에서 Github pages를 사용하기 위한 설정
 tags: [github, github-pages, jekyll, blog, visual studio code]
-image: /assets/images/bishop.png
+image: /assets/images/2020-01-19-VSCode-Github-make-pages/gitlogo.png
 comments: true
 ---
 
