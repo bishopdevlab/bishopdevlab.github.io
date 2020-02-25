@@ -7,7 +7,7 @@ layout: null
 /* --- General --- */
 
 body {
-  font-family: 'Noto Sans', serif;
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #404040;
   position: relative;
