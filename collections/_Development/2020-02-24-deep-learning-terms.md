@@ -7,15 +7,6 @@ image: /assets/images/2020-02-24-deep-learning-terms/deeplearning.png
 comments: true
 ---
 
----
-layout: post
-title: Deep Learning 용어
-subtitle: Deep Learning 개념 이해를 위한 용어의 설명
-tags: [딥러닝, deep learning, Artificial Intelligence, AI, 용어]
-image: /assets/images/2020-02-24-deep-learning-terms/deeplearning.png
-comments: true
----
-
 Deep Learning 공부를 시작하면서 반복적으로 만나는 용어들이 있어 인터넷 검색을 통해 간단히 정리합니다. 이런 용어들을 접할때마다 계속해서 나를 괴롭힙니다만, 사실 이해하고 나면 그리 어렵지 않은 것들입니다.
 
 ## 인공지능, 머신러닝, 딥러닝
