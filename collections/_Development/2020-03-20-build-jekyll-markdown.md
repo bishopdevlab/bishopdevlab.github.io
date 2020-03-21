@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 로컬에서 Github Pages 생성하기
 subtitle: 로컬에서 Ruby와 Jekyll을 사용하여 마크다운을 github pages로 생성하기
