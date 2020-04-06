@@ -1,37 +1,191 @@
-* create be
-> express --view=pug be
-> cd be
-> yarn
-> SET DEBUG=be:* & npm start
-http://localhost:3000/
+Á¦ÀÛ ÀÀ¿ë ¼­¹öÆí
 
-* create fe
-> vue create fe
-Option:
-Manually > Babel, Router, Vuex, Linter > Use history mode (Yes) > Standard > Lint on save > In dedicated config files > Save file (No)
-> cd fe
-> yarn serve
-http://localhost:8080/
+1. NCP (Naver Cloud Platform) °¡ÀÔ ¹× ¼­¹ö »ı¼º
+ - Micro(1vCPU, 1GB Mem, 50GB Disk, ubuntu-16) 1³â°£ ¹«·á
+ - °øÀÎIP ¼³Á¤(¿ù 4~5Ãµ¿ø À¯·á), ACG(¹æÈ­º®) - Æ÷Æ®Æ÷¿öµù (SSH Á¢¼Ó Æ÷Æ®:  2000)
 
-> vue add vuetify
+2. ¼­¹ö Á¢¼Ó
+ - putty¸¦ »ç¿ëÇÏ¿© ¼­¹ö Á¢¼Ó¿ë °øÀÎ IP : 101.101.160.190, ¿ÜºÎ Æ÷Æ® : 2000 Á¢¼Ó
 
-Vuetify 1.3.2 ì´í›„ ë²„ì „ ì˜µì…˜ í•­ëª© (ëŒ€ë¶€ë¶„ ì—”í„°)
-https://fkkmemi.github.io/talk/vuetify-update-cli/
-Configure > pre-made template (Yes) > custom teme (No) > CSS variables (No) > Material Icons > font a dependency (No) > a-la-carte (No) > babel/polyfill (Yes) > English
+3. Node.js ¼³Ä¡
+- ÀÌÈÄ »ç¿ëµÇ´Â ¸í·É¾îµéÀº Ubuntu-16 ±âÁØÀÔ´Ï´Ù.
+- º» °úÁ¤Àº Ã³À½¿¡´Â root·Î ÁøÇàÇÏ´Ù°¡ 7¹ø¿¡¼­ »ç¿ëÀÚ °èÁ¤À» Ãß°¡ÇÏ¿© ÀÌÈÄ »ç¿ëÀÚ °èÁ¤À¸·Î ÁøÇàÇÕ´Ï´Ù.
+root·Î Á¢¼Ó/º¯°æ ÈÄ ÁøÇà(sudo -i)
 
-> yarn serve
-http://localhost:8080/
+* ÃÖ½Å¹öÀü Á¤º¸¸¦ curl·Î ´Ù¿î·Îµå
+(root)
+> curl -sL https://deb.nodesource.com/setup_10.x | bash -
+(user)
+> curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+
+* node.js ¼³Ä¡
+> apt-get install -y nodejs
+(-y´Â Áú¹®¿¡ yes·Î ÀÚµ¿ ´ë´ä)
 
 
-> yarn build
-  fe / dist í´ë” ìƒì„±ë¨
+* node.js ¼³Ä¡ È®ÀÎ
+> node -v
+v10.19.0
+> npm -v
+6.13.4
 
-be / app.js í¸ì§‘
-dist í´ë”ë¥¼ ì‚¬ìš©í•˜ë„ë¡ ë³€ê²½
-app.use(express.static(path.join(__dirname, 'public')));
-->
-app.use(express.static(path.join(__dirname, '../', 'fe', 'dist')));
+4. Git ¼³Ä¡
+* ¹öÀü È®ÀÎ
+> git --version
+git version 2.7.4
+> apt list git -a
+Listing... Done
+git/xenial-updates,xenial-security,now 1:2.7.4-0ubuntu1.7 amd64 [installed]
+git/xenial 1:2.7.4-0ubuntu1 amd64
 
+* ÃÖ½Å¹öÀü ¼³Ä¡
+> add-apt-repository ppa:git-core/ppa -y
+> apt update
+> apt install git -y
+> git --version
+git version 2.26.0
+
+
+5. ¼­ºñ½º µğ·ºÅÍ(/var/www) »ı¼º
+> mkdir /var/www
+> cd /var/www
+
+6. ±êÇãºê ¿¬°áÇÏ±â
+* ±êÇãºê¿¡ ¼­¹öÀÇ ssh Å° µî·Ï
+github.com > personal setting > SSH and GPG keys > Add new SSH keys
+
+* Key »ı¼º
+> ssh-keygen -t rsa -b 4096 -C "dbjavapia@gmail.com"
+Áú¹®¿¡ Enter ÀÔ·Â(3È¸) ÈÄ Å° »ı¼ºµÊ
+> cat ~/.ssh/id_rsa.pub
+Å°°ªÀ» º¹»ç > ±êÇãºê Key ÀÔ·Â¿¡ ºÙ¿©³ÖÀ½ > Add SSH Key ¹öÆ° > ±êÇãºê ºñ¹Ğ¹øÈ£ È®ÀÎ
+
+* ±êÇãºê ¼Ò½º º¹Á¦
+±êÇãºê ·¹ÆÄÁöÅä¸® > Clone or download > Use SSH > SSH key º¹»ç
+> cd /var/www
+> git clone git@github.com:bishopdevlab/solarmon.git
+> cd solarmon
+
+7. °èÁ¤ Ãß°¡
+- ¸®´ª½º¿¡¼­ root¸¦ ±×´ë·Î »ç¿ëÇÏ´Â °ÍÀº ¾Æ¹«·¡µµ À§ÇèÇÕ´Ï´Ù. µû¶ó¼­ »ç¿ëÀÚ °èÁ¤À» Ãß°¡ÇÕ´Ï´Ù.
+ÀÌÈÄ´Â bishop °èÁ¤À» »ç¿ëÇÕ´Ï´Ù.
+> adduser bishop (°èÁ¤ Ãß°¡)
+> adduser bishop sudo (°ü¸®ÀÚ ±ÇÇÑ ºÎ¿©)
+ - ¸¸ÀÏ yarnÀ¸·Î ÆĞÅ°Áö ¼³Ä¡ ½Ã EACCES: permission denied ¿¡·¯°¡ ³ª´Â °æ¿ì µğ·ºÅÍ¸® ¼ÒÀ¯ÀÚ¸¦ Ã¼Å©ÇÕ´Ï´Ù.
+
+8. www µğ·ºÅÍ¸® ¼ÒÀ¯ÀÚ º¯°æ
+> cd /var
+> sudo chown -R bishop www/
+
+
+32. Å¬¶ó¿ìµå ¼­¹ö µğºñ ¼³Ä¡ ¹× Å×½ºÆ®
+
+
+9. yarn ¼³Ä¡
+* yarn: FacebookÀÌ ¸¸µç ÀÚ¹Ù½ºÅ©¸³Æ® ÆĞÅ°Áö ¸Å´ÏÀú
+* ¼³Ä¡ ¹æ¹ı:  https://classic.yarnpkg.com/en/docs/install#debian-stable
+> curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+> echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+deb https://dl.yarnpkg.com/debian/ stable main
+> sudo apt update && sudo apt install yarn
+> yarn -v
+1.22.4
+
+10. ¹é¿£µå ¼­¹ö ÆĞÅ°Áö ¼³Ä¡
+> cd /var/www/solarmon/be
+> yarn (package.json Á¾¼Ó¿ä¼Òµé ¼³Ä¡(Express.js, cors µî)
+
+11. ÇÁ·ĞÆ®¿£µå ¼­¹ö ÆĞÅ°Áö ¼³Ä¡
+> cd /var/www/solarmon/fe
+> yarn (package.json Á¾¼Ó¿ä¼Òµé ¼³Ä¡(Express.js, cors µî)
+> yarn build (Á¤ÀûÀÎ ÆÄÀÏ »ı¼º)
+
+12. ¼­¹ö ±¸µ¿
+> cd /var/www/solarmon/be
 > npm start
-  vuetify(fe)ê°€ ì‹¤í–‰ë¨
-http://localhost:3000/
+
+13. ¸®´ª½º ÆĞÅ°Áö ¾÷µ¥ÀÌÆ®
+* Å¬¶ó¿ìµå ¼­¹ö¿¡¼­ Ä¿³ÎÀ» Á¦¿ÜÇÑ ¸®´ª½º ÆĞÅ°Áö ¾÷µ¥ÀÌÆ®
+https://www.bonusbits.com/wiki/HowTo:Upgrade_Ubuntu_without_Updating_the_Kernel
+> sudo apt-mark hold linux-image-generic linux-headers-generic
+linux-image-generic set on hold.
+linux-headers-generic set on hold.
+
+14. ¸ù°íµğºñ ¼³Ä¡
+root ±ÇÇÑÀ¸·Î ¼³Ä¡(¹«°üÇÑµí ÇÏ³ª È¤½Ã³ª)
+* https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/ ¸Å´º¾óÀ» µû¶ó ¼³Ä¡ÇÔ
+1. Import the public key used by the package management system.
+> wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+> sudo apt-get install gnupg
+> wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+2. Create a list file for MongoDB.
+- Ubuntu 16.04 (Xenial) ÅÇ ¼±ÅÃ
+> echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+3. Reload local package database
+> sudo apt-get update
+4. Install the MongoDB packages.
+> sudo apt-get install -y mongodb-org
+
+¼³Ä¡Á¤º¸ ¸Å´º¾ó ¼³¸í:
+data directory /var/lib/mongodb
+log directory /var/log/mongodb
+By default, MongoDB runs using the mongodb user account. If you change the user that runs the MongoDB process, you must also modify the permission to the data and log directories to give this user access to these directories.
+configuration file /etc/mongod.conf
+
+5. Run MongoDB
+* ¼³Ä¡µÈ ¸®´ª½º°¡ systemd(systemctl ¸í·É¾î)¸¦ »ç¿ëÇÏ´ÂÁö System V init(service ¸í·É¾î)¸¦ »ç¿ëÇØ¾ß ÇÏ´ÂÁö, ¾Æ·¡ ¸í·É¾î·Î È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+> ps --no-headers -o comm 1
+systemd
+
+6. Start/Stop MongoDB
+* Start
+> sudo systemctl start mongod
+* Status
+> sudo systemctl status mongod
+* Stop
+> sudo systemctl stop mongod
+* Restart
+> sudo systemctl restart mongod
+
+7. DB È®ÀÎ
+* MongoDB ½© ½ÇÇà ¹× DB È®ÀÎ
+> mongo
+> show dbs;
+* DB »ı¼º ÈÄ µ¥ÀÌÅÍ Ãß°¡
+> use solarmon;
+> db.test.insertOne({a:1});
+> show dbs;
+> exit
+
+* ¸®´ª½º ½ÃÀÛ ½Ã MongoDB ¼­ºñ½º ½ÇÇàÇÏ±â
+> systemctl enable mongod.service
+
+8. Æ÷Æ® 3000 ¿­¾îÁÖ±â
+NCP ³×ÀÌ¹ö Å¬¶ó¿ìµå ÇÃ·§Æû (https://console.ncloud.com/) Á¢¼Ó ÈÄ ACG ¼³Á¤¿¡¼­ TCP, 0.0.0.0/0(ÀüÃ¼), 3000 Æ÷Æ®¸¦ ¿­¾îÁÜ
+
+9. be ½ÇÇà
+> cd /var/www/solarmon/be
+> npm start
+
+10. ¿¡·¯ ÇØ°á
+·ÎÄÃ PC¿¡¼­ github¿¡¼­ ¼Ò½º¸¦ clone ÈÄ "10. ¹é¿£µå ¼­¹ö ÆĞÅ°Áö ¼³Ä¡"ºÎÅÍ "12. ¼­¹ö ±¸µ¿"±îÁö ÁøÇàÇÏ¿© ¿¡·¯¸¦ È®ÀÎÇÔ
+
+/var/www/solarmon/fe/src/views/user.vue
+- console.log ÁÖ¼® Ã³¸® (// console.log~~)
+- http://localhost:3000/¸¦ »ó´ë°æ·Î(/)·Î º¯°æ
+
+http://localhost:3000/ Á¢¼Ó È®ÀÎ
+
+* º¯°æÄÚµå github¿¡ push
+
+10. ¼­¹ö¿¡¼­ º¯°æ »çÇ× ¹Ş±â
+> cd /var/www/solarmon/
+> git pull
+> cd fe
+> yarn build (°»½ÅµÈ ¼Ò½º ºôµå)
+> cd ../be
+> npm start
+
+
+
+
