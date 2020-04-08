@@ -117,6 +117,8 @@ UI 컴포넌트 라이브러리는 Bootstrap과 Vuetify에서 고민을 하다�
 
 결과적으로 MEVN(mongoDB, express, Vue.js, node.js) 스택의 조합을 선택했습니다.
 
+![MEVN Stack](/../../assets/images/2020-03-06-choice-web-tech-stack/mevn-stack.png)
+
 * Back-end
     - MongoDB (데이터베이스)
     - Express (웹서버)
