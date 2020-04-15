@@ -1,36 +1,36 @@
-Á¦ÀÛ ÀÀ¿ë ¼­¹öÆí
+ï»¿ì œì‘ ì‘ìš© ì„œë²„í¸
 
-1. NCP (Naver Cloud Platform) °¡ÀÔ ¹× ¼­¹ö »ı¼º
- - Micro(1vCPU, 1GB Mem, 50GB Disk, ubuntu-16) 1³â°£ ¹«·á
- - °øÀÎIP ¼³Á¤(¿ù 4~5Ãµ¿ø À¯·á), ACG(¹æÈ­º®) - Æ÷Æ®Æ÷¿öµù (SSH Á¢¼Ó Æ÷Æ®:  2000)
+1. NCP (Naver Cloud Platform) ê°€ì… ë° ì„œë²„ ìƒì„±
+ - Micro(1vCPU, 1GB Mem, 50GB Disk, ubuntu-16) 1ë…„ê°„ ë¬´ë£Œ
+ - ê³µì¸IP ì„¤ì •(ì›” 4~5ì²œì› ìœ ë£Œ), ACG(ë°©í™”ë²½) - í¬íŠ¸í¬ì›Œë”© (SSH ì ‘ì† í¬íŠ¸:  2000)
 
-2. ¼­¹ö Á¢¼Ó
- - putty¸¦ »ç¿ëÇÏ¿© ¼­¹ö Á¢¼Ó¿ë °øÀÎ IP : 101.101.160.190, ¿ÜºÎ Æ÷Æ® : 2000 Á¢¼Ó
+2. ì„œë²„ ì ‘ì†
+ - puttyë¥¼ ì‚¬ìš©í•˜ì—¬ ì„œë²„ ì ‘ì†ìš© ê³µì¸ IP : 101.101.160.190, ì™¸ë¶€ í¬íŠ¸ : 2000 ì ‘ì†
 
-3. Node.js ¼³Ä¡
-- ÀÌÈÄ »ç¿ëµÇ´Â ¸í·É¾îµéÀº Ubuntu-16 ±âÁØÀÔ´Ï´Ù.
-- º» °úÁ¤Àº Ã³À½¿¡´Â root·Î ÁøÇàÇÏ´Ù°¡ 7¹ø¿¡¼­ »ç¿ëÀÚ °èÁ¤À» Ãß°¡ÇÏ¿© ÀÌÈÄ »ç¿ëÀÚ °èÁ¤À¸·Î ÁøÇàÇÕ´Ï´Ù.
-root·Î Á¢¼Ó/º¯°æ ÈÄ ÁøÇà(sudo -i)
+3. Node.js ì„¤ì¹˜
+- ì´í›„ ì‚¬ìš©ë˜ëŠ” ëª…ë ¹ì–´ë“¤ì€ Ubuntu-16 ê¸°ì¤€ì…ë‹ˆë‹¤.
+- ë³¸ ê³¼ì •ì€ ì²˜ìŒì—ëŠ” rootë¡œ ì§„í–‰í•˜ë‹¤ê°€ 7ë²ˆì—ì„œ ì‚¬ìš©ì ê³„ì •ì„ ì¶”ê°€í•˜ì—¬ ì´í›„ ì‚¬ìš©ì ê³„ì •ìœ¼ë¡œ ì§„í–‰í•©ë‹ˆë‹¤.
+rootë¡œ ì ‘ì†/ë³€ê²½ í›„ ì§„í–‰(sudo -i)
 
-* ÃÖ½Å¹öÀü Á¤º¸¸¦ curl·Î ´Ù¿î·Îµå
+* ìµœì‹ ë²„ì „ ì •ë³´ë¥¼ curlë¡œ ë‹¤ìš´ë¡œë“œ
 (root)
 > curl -sL https://deb.nodesource.com/setup_10.x | bash -
 (user)
 > curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 
-* node.js ¼³Ä¡
+* node.js ì„¤ì¹˜
 > apt-get install -y nodejs
-(-y´Â Áú¹®¿¡ yes·Î ÀÚµ¿ ´ë´ä)
+(-yëŠ” ì§ˆë¬¸ì— yesë¡œ ìë™ ëŒ€ë‹µ)
 
 
-* node.js ¼³Ä¡ È®ÀÎ
+* node.js ì„¤ì¹˜ í™•ì¸
 > node -v
 v10.19.0
 > npm -v
 6.13.4
 
-4. Git ¼³Ä¡
-* ¹öÀü È®ÀÎ
+4. Git ì„¤ì¹˜
+* ë²„ì „ í™•ì¸
 > git --version
 git version 2.7.4
 > apt list git -a
@@ -38,7 +38,7 @@ Listing... Done
 git/xenial-updates,xenial-security,now 1:2.7.4-0ubuntu1.7 amd64 [installed]
 git/xenial 1:2.7.4-0ubuntu1 amd64
 
-* ÃÖ½Å¹öÀü ¼³Ä¡
+* ìµœì‹ ë²„ì „ ì„¤ì¹˜
 > add-apt-repository ppa:git-core/ppa -y
 > apt update
 > apt install git -y
@@ -46,44 +46,44 @@ git/xenial 1:2.7.4-0ubuntu1 amd64
 git version 2.26.0
 
 
-5. ¼­ºñ½º µğ·ºÅÍ(/var/www) »ı¼º
+5. ì„œë¹„ìŠ¤ ë””ë ‰í„°(/var/www) ìƒì„±
 > mkdir /var/www
 > cd /var/www
 
-6. ±êÇãºê ¿¬°áÇÏ±â
-* ±êÇãºê¿¡ ¼­¹öÀÇ ssh Å° µî·Ï
+6. ê¹ƒí—ˆë¸Œ ì—°ê²°í•˜ê¸°
+* ê¹ƒí—ˆë¸Œì— ì„œë²„ì˜ ssh í‚¤ ë“±ë¡
 github.com > personal setting > SSH and GPG keys > Add new SSH keys
 
-* Key »ı¼º
+* Key ìƒì„±
 > ssh-keygen -t rsa -b 4096 -C "dbjavapia@gmail.com"
-Áú¹®¿¡ Enter ÀÔ·Â(3È¸) ÈÄ Å° »ı¼ºµÊ
+ì§ˆë¬¸ì— Enter ì…ë ¥(3íšŒ) í›„ í‚¤ ìƒì„±ë¨
 > cat ~/.ssh/id_rsa.pub
-Å°°ªÀ» º¹»ç > ±êÇãºê Key ÀÔ·Â¿¡ ºÙ¿©³ÖÀ½ > Add SSH Key ¹öÆ° > ±êÇãºê ºñ¹Ğ¹øÈ£ È®ÀÎ
+í‚¤ê°’ì„ ë³µì‚¬ > ê¹ƒí—ˆë¸Œ Key ì…ë ¥ì— ë¶™ì—¬ë„£ìŒ > Add SSH Key ë²„íŠ¼ > ê¹ƒí—ˆë¸Œ ë¹„ë°€ë²ˆí˜¸ í™•ì¸
 
-* ±êÇãºê ¼Ò½º º¹Á¦
-±êÇãºê ·¹ÆÄÁöÅä¸® > Clone or download > Use SSH > SSH key º¹»ç
+* ê¹ƒí—ˆë¸Œ ì†ŒìŠ¤ ë³µì œ
+ê¹ƒí—ˆë¸Œ ë ˆíŒŒì§€í† ë¦¬ > Clone or download > Use SSH > SSH key ë³µì‚¬
 > cd /var/www
 > git clone git@github.com:bishopdevlab/solarmon.git
 > cd solarmon
 
-7. °èÁ¤ Ãß°¡
-- ¸®´ª½º¿¡¼­ root¸¦ ±×´ë·Î »ç¿ëÇÏ´Â °ÍÀº ¾Æ¹«·¡µµ À§ÇèÇÕ´Ï´Ù. µû¶ó¼­ »ç¿ëÀÚ °èÁ¤À» Ãß°¡ÇÕ´Ï´Ù.
-ÀÌÈÄ´Â bishop °èÁ¤À» »ç¿ëÇÕ´Ï´Ù.
-> adduser bishop (°èÁ¤ Ãß°¡)
-> adduser bishop sudo (°ü¸®ÀÚ ±ÇÇÑ ºÎ¿©)
- - ¸¸ÀÏ yarnÀ¸·Î ÆĞÅ°Áö ¼³Ä¡ ½Ã EACCES: permission denied ¿¡·¯°¡ ³ª´Â °æ¿ì µğ·ºÅÍ¸® ¼ÒÀ¯ÀÚ¸¦ Ã¼Å©ÇÕ´Ï´Ù.
+7. ê³„ì • ì¶”ê°€
+- ë¦¬ëˆ…ìŠ¤ì—ì„œ rootë¥¼ ê·¸ëŒ€ë¡œ ì‚¬ìš©í•˜ëŠ” ê²ƒì€ ì•„ë¬´ë˜ë„ ìœ„í—˜í•©ë‹ˆë‹¤. ë”°ë¼ì„œ ì‚¬ìš©ì ê³„ì •ì„ ì¶”ê°€í•©ë‹ˆë‹¤.
+ì´í›„ëŠ” bishop ê³„ì •ì„ ì‚¬ìš©í•©ë‹ˆë‹¤.
+> adduser bishop (ê³„ì • ì¶”ê°€)
+> adduser bishop sudo (ê´€ë¦¬ì ê¶Œí•œ ë¶€ì—¬)
+ - ë§Œì¼ yarnìœ¼ë¡œ íŒ¨í‚¤ì§€ ì„¤ì¹˜ ì‹œ EACCES: permission denied ì—ëŸ¬ê°€ ë‚˜ëŠ” ê²½ìš° ë””ë ‰í„°ë¦¬ ì†Œìœ ìë¥¼ ì²´í¬í•©ë‹ˆë‹¤.
 
-8. www µğ·ºÅÍ¸® ¼ÒÀ¯ÀÚ º¯°æ
+8. www ë””ë ‰í„°ë¦¬ ì†Œìœ ì ë³€ê²½
 > cd /var
 > sudo chown -R bishop www/
 
 
-32. Å¬¶ó¿ìµå ¼­¹ö µğºñ ¼³Ä¡ ¹× Å×½ºÆ®
+32. í´ë¼ìš°ë“œ ì„œë²„ ë””ë¹„ ì„¤ì¹˜ ë° í…ŒìŠ¤íŠ¸
 
 
-9. yarn ¼³Ä¡
-* yarn: FacebookÀÌ ¸¸µç ÀÚ¹Ù½ºÅ©¸³Æ® ÆĞÅ°Áö ¸Å´ÏÀú
-* ¼³Ä¡ ¹æ¹ı:  https://classic.yarnpkg.com/en/docs/install#debian-stable
+9. yarn ì„¤ì¹˜
+* yarn: Facebookì´ ë§Œë“  ìë°”ìŠ¤í¬ë¦½íŠ¸ íŒ¨í‚¤ì§€ ë§¤ë‹ˆì €
+* ì„¤ì¹˜ ë°©ë²•:  https://classic.yarnpkg.com/en/docs/install#debian-stable
 > curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 > echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 deb https://dl.yarnpkg.com/debian/ stable main
@@ -91,49 +91,49 @@ deb https://dl.yarnpkg.com/debian/ stable main
 > yarn -v
 1.22.4
 
-10. ¹é¿£µå ¼­¹ö ÆĞÅ°Áö ¼³Ä¡
+10. ë°±ì—”ë“œ ì„œë²„ íŒ¨í‚¤ì§€ ì„¤ì¹˜
 > cd /var/www/solarmon/be
-> yarn (package.json Á¾¼Ó¿ä¼Òµé ¼³Ä¡(Express.js, cors µî)
+> yarn (package.json ì¢…ì†ìš”ì†Œë“¤ ì„¤ì¹˜(Express.js, cors ë“±)
 
-11. ÇÁ·ĞÆ®¿£µå ¼­¹ö ÆĞÅ°Áö ¼³Ä¡
+11. í”„ë¡ íŠ¸ì—”ë“œ ì„œë²„ íŒ¨í‚¤ì§€ ì„¤ì¹˜
 > cd /var/www/solarmon/fe
-> yarn (package.json Á¾¼Ó¿ä¼Òµé ¼³Ä¡(Express.js, cors µî)
-> yarn build (Á¤ÀûÀÎ ÆÄÀÏ »ı¼º)
+> yarn (package.json ì¢…ì†ìš”ì†Œë“¤ ì„¤ì¹˜(Express.js, cors ë“±)
+> yarn build (ì •ì ì¸ íŒŒì¼ ìƒì„±)
 
-12. ¼­¹ö ±¸µ¿
+12. ì„œë²„ êµ¬ë™
 > cd /var/www/solarmon/be
 > npm start
 
-13. ¸®´ª½º ÆĞÅ°Áö ¾÷µ¥ÀÌÆ®
-* Å¬¶ó¿ìµå ¼­¹ö¿¡¼­ Ä¿³ÎÀ» Á¦¿ÜÇÑ ¸®´ª½º ÆĞÅ°Áö ¾÷µ¥ÀÌÆ®
+13. ë¦¬ëˆ…ìŠ¤ íŒ¨í‚¤ì§€ ì—…ë°ì´íŠ¸
+* í´ë¼ìš°ë“œ ì„œë²„ì—ì„œ ì»¤ë„ì„ ì œì™¸í•œ ë¦¬ëˆ…ìŠ¤ íŒ¨í‚¤ì§€ ì—…ë°ì´íŠ¸
 https://www.bonusbits.com/wiki/HowTo:Upgrade_Ubuntu_without_Updating_the_Kernel
 > sudo apt-mark hold linux-image-generic linux-headers-generic
 linux-image-generic set on hold.
 linux-headers-generic set on hold.
 
-14. ¸ù°íµğºñ ¼³Ä¡
-root ±ÇÇÑÀ¸·Î ¼³Ä¡(¹«°üÇÑµí ÇÏ³ª È¤½Ã³ª)
-* https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/ ¸Å´º¾óÀ» µû¶ó ¼³Ä¡ÇÔ
+14. ëª½ê³ ë””ë¹„ ì„¤ì¹˜
+root ê¶Œí•œìœ¼ë¡œ ì„¤ì¹˜(ë¬´ê´€í•œë“¯ í•˜ë‚˜ í˜¹ì‹œë‚˜)
+* https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/ ë§¤ë‰´ì–¼ì„ ë”°ë¼ ì„¤ì¹˜í•¨
 1. Import the public key used by the package management system.
 > wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 > sudo apt-get install gnupg
 > wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 2. Create a list file for MongoDB.
-- Ubuntu 16.04 (Xenial) ÅÇ ¼±ÅÃ
+- Ubuntu 16.04 (Xenial) íƒ­ ì„ íƒ
 > echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 3. Reload local package database
 > sudo apt-get update
 4. Install the MongoDB packages.
 > sudo apt-get install -y mongodb-org
 
-¼³Ä¡Á¤º¸ ¸Å´º¾ó ¼³¸í:
+ì„¤ì¹˜ì •ë³´ ë§¤ë‰´ì–¼ ì„¤ëª…:
 data directory /var/lib/mongodb
 log directory /var/log/mongodb
 By default, MongoDB runs using the mongodb user account. If you change the user that runs the MongoDB process, you must also modify the permission to the data and log directories to give this user access to these directories.
 configuration file /etc/mongod.conf
 
 5. Run MongoDB
-* ¼³Ä¡µÈ ¸®´ª½º°¡ systemd(systemctl ¸í·É¾î)¸¦ »ç¿ëÇÏ´ÂÁö System V init(service ¸í·É¾î)¸¦ »ç¿ëÇØ¾ß ÇÏ´ÂÁö, ¾Æ·¡ ¸í·É¾î·Î È®ÀÎÇÒ ¼ö ÀÖ´Ù.
+* ì„¤ì¹˜ëœ ë¦¬ëˆ…ìŠ¤ê°€ systemd(systemctl ëª…ë ¹ì–´)ë¥¼ ì‚¬ìš©í•˜ëŠ”ì§€ System V init(service ëª…ë ¹ì–´)ë¥¼ ì‚¬ìš©í•´ì•¼ í•˜ëŠ”ì§€, ì•„ë˜ ëª…ë ¹ì–´ë¡œ í™•ì¸í•  ìˆ˜ ìˆë‹¤.
 > ps --no-headers -o comm 1
 systemd
 
@@ -147,45 +147,339 @@ systemd
 * Restart
 > sudo systemctl restart mongod
 
-7. DB È®ÀÎ
-* MongoDB ½© ½ÇÇà ¹× DB È®ÀÎ
+7. DB í™•ì¸
+* MongoDB ì‰˜ ì‹¤í–‰ ë° DB í™•ì¸
 > mongo
 > show dbs;
-* DB »ı¼º ÈÄ µ¥ÀÌÅÍ Ãß°¡
+* DB ìƒì„± í›„ ë°ì´í„° ì¶”ê°€
 > use solarmon;
 > db.test.insertOne({a:1});
 > show dbs;
 > exit
 
-* ¸®´ª½º ½ÃÀÛ ½Ã MongoDB ¼­ºñ½º ½ÇÇàÇÏ±â
+* ë¦¬ëˆ…ìŠ¤ ì‹œì‘ ì‹œ MongoDB ì„œë¹„ìŠ¤ ì‹¤í–‰í•˜ê¸°
 > systemctl enable mongod.service
 
-8. Æ÷Æ® 3000 ¿­¾îÁÖ±â
-NCP ³×ÀÌ¹ö Å¬¶ó¿ìµå ÇÃ·§Æû (https://console.ncloud.com/) Á¢¼Ó ÈÄ ACG ¼³Á¤¿¡¼­ TCP, 0.0.0.0/0(ÀüÃ¼), 3000 Æ÷Æ®¸¦ ¿­¾îÁÜ
+8. í¬íŠ¸ 3000 ì—´ì–´ì£¼ê¸°
+NCP ë„¤ì´ë²„ í´ë¼ìš°ë“œ í”Œë«í¼ (https://console.ncloud.com/) ì ‘ì† í›„ ACG ì„¤ì •ì—ì„œ TCP, 0.0.0.0/0(ì „ì²´), 3000 í¬íŠ¸ë¥¼ ì—´ì–´ì¤Œ
 
-9. be ½ÇÇà
+9. be ì‹¤í–‰
 > cd /var/www/solarmon/be
 > npm start
 
-10. ¿¡·¯ ÇØ°á
-·ÎÄÃ PC¿¡¼­ github¿¡¼­ ¼Ò½º¸¦ clone ÈÄ "10. ¹é¿£µå ¼­¹ö ÆĞÅ°Áö ¼³Ä¡"ºÎÅÍ "12. ¼­¹ö ±¸µ¿"±îÁö ÁøÇàÇÏ¿© ¿¡·¯¸¦ È®ÀÎÇÔ
+10. ì—ëŸ¬ í•´ê²°
+ë¡œì»¬ PCì—ì„œ githubì—ì„œ ì†ŒìŠ¤ë¥¼ clone í›„ "10. ë°±ì—”ë“œ ì„œë²„ íŒ¨í‚¤ì§€ ì„¤ì¹˜"ë¶€í„° "12. ì„œë²„ êµ¬ë™"ê¹Œì§€ ì§„í–‰í•˜ì—¬ ì—ëŸ¬ë¥¼ í™•ì¸í•¨
 
 /var/www/solarmon/fe/src/views/user.vue
-- console.log ÁÖ¼® Ã³¸® (// console.log~~)
-- http://localhost:3000/¸¦ »ó´ë°æ·Î(/)·Î º¯°æ
+- console.log ì£¼ì„ ì²˜ë¦¬ (// console.log~~)
+- http://localhost:3000/ë¥¼ ìƒëŒ€ê²½ë¡œ(/)ë¡œ ë³€ê²½
 
-http://localhost:3000/ Á¢¼Ó È®ÀÎ
+http://localhost:3000/ ì ‘ì† í™•ì¸
 
-* º¯°æÄÚµå github¿¡ push
+* ë³€ê²½ì½”ë“œ githubì— push
 
-10. ¼­¹ö¿¡¼­ º¯°æ »çÇ× ¹Ş±â
+10. ì„œë²„ì—ì„œ ë³€ê²½ ì‚¬í•­ ë°›ê¸°
 > cd /var/www/solarmon/
 > git pull
 > cd fe
-> yarn build (°»½ÅµÈ ¼Ò½º ºôµå)
+> yarn build (ê°±ì‹ ëœ ì†ŒìŠ¤ ë¹Œë“œ)
 > cd ../be
 > npm start
 
 
+* ì—ëŸ¬ ë°œìƒ ì‹œ ì„¤ì¹˜
+Error: Cannot find module 'connect-history-api-fallback'Require stack:
+> npm install --save connect-history-api-fallback
+
+Error: Cannot find module 'http-errors'
+> npm install
 
 
+
+33. ë°°í¬ë¥¼ ìœ„í•œ ê°œë°œ í™˜ê²½ ì„¤ì •
+
+ê°œë°œ ëª¨ë“œì™€ ë°°í¬ ëª¨ë“œì˜ êµ¬ë¶„í•˜ê¸° ìœ„í•œ ì„¤ì •
+
+1. ë°±ì—”ë“œ ì„œë²„ ëª¨ë“œ ë³€ê²½ ì‹¤í–‰
+
+* í™˜ê²½ë³€ìˆ˜ í…ŒìŠ¤íŠ¸
+nodeì—ì„œ process.env.NODE_ENV í™˜ê²½ë³€ìˆ˜ë¡œ ëª¨ë“œë¥¼ êµ¬ë¶„í•  ìˆ˜ ìˆìŒ
+app.js í•˜ë‹¨ì— console.log(process.env.NODE_ENV) ì½”ë“œë¥¼ ì¶”ê°€í•˜ì—¬ í˜„ì¬ ëª¨ë“œê°€ ë¬´ì—‡ì¸ì§€ í™•ì¸
+
+npm startë¡œ nodeë¥¼ ì‹¤í–‰í•˜ëŠ” ê²ƒì´ ì•„ë‹ˆë¼ NODE_ENVë¥¼ ì§€ì •í•´ì„œ ì‹¤í–‰
+> cd be
+> NODE_ENV=xxMode node ./bin/www
+--> ì—ëŸ¬ ë°œìƒ: ìœˆë„ìš°ì—ì„œëŠ” NODE_ENV ì¸ì‹í•˜ì§€ ëª»í•¨ => MacOS/Linuxì™€ Windowsì˜ í™˜ê²½ë³€ìˆ˜ ì„¤ì •í•˜ëŠ” ë°©ë²•ì´ ë‹¤ë¦„
+
+* ìœˆë„ìš° í™˜ê²½ë³€ìˆ˜ í…ŒìŠ¤íŠ¸ (PowerShell)
+- PowerShell
+> $env:NODE_ENV="xxMode"
+- CMD
+> set NODE_ENV=xxMode
+
+> node ./bin/www
+console.logì— ì˜í•´ xxModeê°€ ì¶œë ¥ë¨
+
+* ëª¨ë“œ êµ¬ë¶„ ì „ì—­ë³€ìˆ˜ ì„¤ì •
+ - package.json íŒŒì¼ì—ì„œ ëª¨ë“œ í™˜ê²½ë³€ìˆ˜ë¥¼ ì„¤ì •í•˜ì—¬ êµ¬ë¶„í•´ì„œ ì‹¤í–‰
+> cd /var/www/solarmon/
+package.json íŒŒì¼ ìƒì„± í›„ ê¸°ë³¸ì •ë³´ ì„¤ì • í›„ scriptsì— dev, pr ì¶”ê°€
+
+{
+    "name": "solarmon",
+    "version": "0.0.1",
+    "scripts": {
+      "dev": "NODE_ENV=development node ./bin/www",
+      "prd": "NODE_ENV=production node ./bin/www"
+    },
+    "dependencies": {
+      }
+}
+
+ì‹¤í–‰
+> cd /var/www/solarmon/
+> npm run dev
+--> ìœˆë„ìš°ì—ì„œëŠ” ì—­ì‹œë‚˜ NODE_ENVë¥¼ ì¸ì‹í•˜ì§€ ëª»í•¨. $envë‚˜ setì„ ì‚¬ìš©í•´ë„ ì˜¤ë¥˜ê°€ ë°œìƒí•¨
+
+* cross-env ì„¤ì¹˜ (
+OSì™€ ìƒê´€ì—†ì´ í™˜ê²½ë³€ìˆ˜ë¥¼ ì„¤ì •í•  ìˆ˜ ìˆë„ë¡ í•´ì£¼ëŠ” ëª¨ë“ˆ
+global(-g)ë¡œ ì„¤ì¹˜í•´ì•¼ í•¨
+> npm install -g cross-env
+
+package.json ìˆ˜ì •
+"dev": "cross-env NODE_ENV=development node ./be/bin/www",
+"pr": "cross-env NODE_ENV=production node ./be/bin/www"
+
+* ì‹¤í–‰ í™•ì¸
+> cd /var/www/solarmon/
+> npm run dev
+> npm run pr
+> yarn dev
+> yarn pr
+
+
+* í¬íŠ¸ ì„¤ì •
+package.json ìˆ˜ì • - í¬íŠ¸ ì¶”ê°€
+"pr": "cross-env NODE_ENV=production PORT=80 node ./be/bin/www"
+
+* cors ì„¤ì •
+corsëŠ” 8080 -> 3000 ì—°ê²°ì„ ìœ„í•´ ì„¤ì •í–ˆì—ˆìŒ. ê°œë°œì‹œì—ë§Œ ì‚¬ìš©í•˜ë„ë¡ ë³€ê²½
+be/app.js ìˆ˜ì •
+if (process.env.NODE_ENV !== 'production') app.use(cors())
+
+
+2. í”„ë¡ íŠ¸ì—”ë“œ ëª¨ë“œ ë³€ê²½ ì‹¤í–‰
+fe ëª¨ë“œ êµ¬ë¶„: yarn serve(ê°œë°œ), yarn build(ë°°í¬)
+ëª¨ë“œ í™•ì¸: fe/src/App.vue íŒŒì¼ ìˆ˜ì •
+title: process.env.NODE_ENV // 'Vuetify.js'
+
+> cd fe
+> yarn serve ë˜ëŠ” yarn build
+ê°œë°œ or ë°°í¬ ëª¨ë“œë¡œ ì‹¤í–‰í•˜ë©´ íƒ€ì´í‹€ì— í˜„ì¬ ëª¨ë“œê°€ í‘œì‹œëœë‹¤.
+
+* APIë¡œ ê²½ë¡œë¥¼ ëª¨ë“œë³„ë¡œ ë³€ê²½
+fe/src/main.js íŒŒì¼ì— apiRootPath ì„ ì–¸ ì¶”ê°€
+Vue.prototype.$apiRootPath = process.env.NODE_ENV !== 'production' ? 'http://localhost:3000/api/' : '/api/'
+
+fe/src/views/user.vue
+ëª¨ë“  apiì— ëŒ€í•´ì„œ '/api/user'ë¥¼ `${this.$apiRootPath}user` ë°©ì‹ìœ¼ë¡œ ë³€ê²½
+
+fe/src/App.vue íŒŒì¼ ìˆ˜ì •
+title: this.$apiRootPath // 'Vuetify.js'
+
+3. ì—°ì† ì‹¤í–‰ ëª…ë ¹ ì‘ìš©
+* solarmon/package.json íŒŒì¼ ìˆ˜ì •
+"scripts": {
+      "dev": "cross-env NODE_ENV=development node ./be/bin/www",
+      "serve": "cd fe && yarn serve",
+      "pr": "cd fe && yarn && yarn build && cd ../be && yarn && cd .. && cross-env NODE_ENV=production PORT=80 node ./be/bin/www"
+    },
+
+- dev: ê°œë°œëª¨ë“œ back-end ì‹¤í–‰
+- serve: ê°œë°œëª¨ë“œ front-end ì‹¤í–‰
+- pr: ë°°í¬ëª¨ë“œ ì‹¤í–‰
+
+* ë¡œì»¬(ê°œë°œ ëª¨ë“œ)ì—ì„œ ì‹¤í–‰
+> cd /var/www/solarmon/
+- Back-end ì‹¤í–‰
+> yarn dev
+- Front-end ì‹¤í–‰
+> yarn serve
+
+* ì„œë²„(ë°°í¬ ëª¨ë“œ)ì—ì„œ ì‹¤í–‰
+> cd /var/www/solarmon/
+> yarn pr
+
+--> ë¡œì»¬ì—ì„œ ì„œë²„ ëª¨ë“œ ì‹¤í–‰(yarn pr) ì‹œ 80 í¬íŠ¸ ê¶Œí•œë¬¸ì œê°€ ë°œìƒí•œë‹¤.
+'port 80 requires elevated privileges'
+
+--> NCP ì„œë²„ì—ì„œëŠ” yarn prë¡œ ì˜ ì‹¤í–‰ë¨.
+
+
+* NCP ì„œë²„ì—ì„œ í™•ì¸í•˜ê¸°
+ - ACGì— 80í¬íŠ¸ ì¶”ê°€ (TCP, 0.0.0.0/0, 80)
+ - ncp í„°ë¯¸ë„ ì ‘ì†
+> cd /var/www/solarmon
+ - gitìœ¼ë¡œ ì†ŒìŠ¤ ê°±ì‹ 
+> git pull
+ - ì„œë²„ëª¨ë“œë¡œ ì‹¤ìƒ
+> yarn pr
+
+--> cross-envê°€ ì„¤ì¹˜ë˜ì–´ ìˆì§€ ì•Šì€ ê²½ìš° cross-env ì„¤ì¹˜
+> npm install -g cross-env
+
+--> 80í¬íŠ¸ë¡œ ì ‘ì† ì„±ê³µ
+
+
+**** ì„œë²„(ë°°í¬ ëª¨ë“œ)ì—ì„œ ì‹¤í–‰
+> cd /var/www/solarmon/
+> yarn pr
+
+
+
+
+
+
+34. pm2ë¡œ ì•ˆì •ì ì¸ ì„œë²„ ë§Œë“¤ê¸° ===> ê°•ì¢Œì—ì„œ ê²°ê³¼ì ìœ¼ë¡œ pm2 ì‚¬ìš©í•˜ì§€ ì•ŠìŒ.
+ê°•ì¢Œì—ì„œ ë‹¤ë¥¸ ë°©ë²•ì„ ì‚¬ìš©í•œë‹¤ê³  í•¨. (ì˜¤í† ìŠ¤ì¼€ì¼ë§ ì‹œ ì¦ì„¤ ì„œë²„ì˜ IPë¥¼ ì•Œìˆ˜ ì—†ê¸° ë•Œë¬¸ ë“±ë“±)
+ê·¸ì „ì— ë™ì¼í•˜ê²Œ ì‹œë„ë¥¼ í–ˆëŠ”ë°, ê²½ë¡œê°€ solarmon/sourceê°€ ìƒê¸°ê³  ê±°ê¸°ì— ë°°í¬ê°€ ë¨. ë”°ë¼ì„œ ì‚¬ìš©í•˜ì§€ ì•ŠìŒ.
+
+pm2, pm2-logrotateëŠ” ì œê±°
+- ì„œë²„/ë¡œì»¬ (npm, yarn ëª¨ë‘ ì„¤ì¹˜ë¥¼ í–ˆì—ˆê¸° ë•Œë¬¸ì— ëª¨ë‘ ì‚­ì œ)
+> npm uninstall pm2-logrotate
+> npm uninstall pm2
+> yarn global remove pm2-logrotate
+> yarn global remove pm2
+
+-----
+
+- pm2ë¥¼ ë¡œì»¬ì—ì„œ ì„¤ì¹˜í•´ì„œ ì‚¬ìš©í•´ë³´ê¸°
+* pm2 ì„¤ì¹˜
+> yarn global add pm2
+> pm2 -v
+4.2.3
+
+* pm2 ì‚¬ìš©í•´ë³´ê¸°
+- pm2ë¡œ www ì‹¤í–‰
+> cd /var/www/solarmon
+> pm2 start ./be/bin/www
+
+- pm2 í™•ì¸í•˜ê¸°
+> pm2 log
+> pm2 monit
+
+- pm2 ê´€ë¦¬í•˜ê¸°
+> pm2 status
+
+- pm2 ì„œë¹„ìŠ¤ ì¢…ë£Œ
+www ë„ê¸°
+> pm2 stop www
+www ì§€ìš°ê¸°
+> pm2 delete www
+
+* pm2 ì„¤ì •íŒŒì¼ ë§Œë“¤ê¸°
+> cd /var/www/solarmon
+> pm2 init
+ ecosystem.config.js íŒŒì¼ì´ ìƒì„±ë¨(ìƒ˜í”Œ)
+
+- ecosystem.config.js íŒŒì¼ ìˆ˜ì •
+apps : [{
+    name: 'solarmon',
+    script: './be/bin/www',
+    env: {
+      NODE_ENV: 'development',
+      PORT: 3000
+    },
+    env_pr: {
+      NODE_ENV: 'production',
+      PORT: 80
+    }
+  }],
+
+* pm2 ì„¤ì •íŒŒì¼ë¡œ ì‹¤í–‰í•˜ê¸°
+- ê°œë°œìš©
+> pm2 start
+- ë°°í¬ìš©
+> pm2 start --env pr
+> pm2 start ecosystem.comfig.js --env pr
+
+* ë¡œê·¸ í™•ì¸
+> pm2 log
+
+* out ë©”ì‹œì§€ ë¡œê·¸ íŒŒì¼ í¬ê¸° ì œí•œ
+- out ë©”ì‹œì§€ ë¡œê·¸ íŒŒì¼ì´ ì»¤ì§€ëŠ” ê²ƒì„ ë°©ì§€. PM2 Rotating Logs ì‚¬ìš©
+- logrotate ì„¤ì¹˜
+> pm2 install pm2-logrotate
+- ë¡œê·¸ íŒŒì¼ì´ 7ì¼ ë™ì•ˆë§Œ ìœ ì§€
+> pm2 set pm2-logrotate:retain 7
+
+
+35. pm2ë¡œ ì‹¤ì œ ì„œë²„ì— ë°°í¬í•˜ê¸°
+* package.jsonì— pm2 ì¶”ê°€
+"pm2": "cd fe && yarn && yarn build && cd ../be && yarn && cd .. && pm2 start --env pr"
+
+* pm2 ì¢…ì†ìš”ì†Œ ì„¤ì¹˜
+> yarn pm2
+
+* ì„œë²„ì— ì ìš©í•˜ê¸°
+- ì„œë²„ ë””ìŠ¤í¬ ìš©ëŸ‰ í™•ì¸
+> df -h
+- ì„œë²„ì— pm2 ì„¤ì¹˜ -> yarn ì„¤ì¹˜ ì‹œ ê²½ë¡œ ë¬¸ì œê°€ ìˆì–´ npmìœ¼ë¡œ ì„¤ì¹˜í•´ì•¼ í•¨
+> npm i pm2 -g
+> pm2 -v
+4.2.3
+
+- ì„œë²„ì— logrotate ì„¤ì¹˜
+> pm2 install pm2-logrotate
+
+- ë¡œê·¸ íŒŒì¼ì´ 7ì¼ ë™ì•ˆë§Œ ìœ ì§€
+> pm2 set pm2-logrotate:retain 7
+
+- ë¡œì»¬ ì†ŒìŠ¤ë¥¼ githubì— push
+
+- ì„œë²„ì—ì„œ ì½”ë“œ ìµœì‹ í™”
+> cd /var/www/solarmon
+> git pull
+- ì„œë²„ì— ì¢…ì†ìš”ì†Œ ì„¤ì¹˜
+> yarn pm2
+
+* ë°°í¬í•˜ê¸°
+- ecosystem.comfig.js íŒŒì¼ ìˆ˜ì •
+deploy : {
+    pr : {
+      user : 'root',
+      host : [{host: '101.101.160.190', port: '2000'}],
+      key  : 'D:/GitHub/bishopdevlabKey.pem',
+      ref  : 'origin/master',
+      repo : 'git@github.com:bishopdevlab/solarmon.git',
+      ssh_options: 'StrictHostKeyChecking=no',
+      path : '/var/www/solarmon',
+      'post-deploy' : 'yarn pm2'
+    }
+  }
+
+- ë°°í¬
+> pm2 deploy pr
+--> ë°°í¬ ì‹¤íŒ¨. ì—ëŸ¬ ë©”ì‹œì§€
+Deploy failed
+spawn sh ENOENT
+
+==> ì—ëŸ¬ í•´ê²°: ìœˆë„ìš°ì—ì„œëŠ” cmdë‚˜ powershellì—ì„œëŠ” ë°°í¬ê°€ ì•ˆë¨. Git bashë¥¼ ì‚¬ìš©í•˜ë©´ ë¨.
+Git bashë¥¼ ê´€ë¦¬ì ê¶Œí•œìœ¼ë¡œ ì‹¤í–‰ í›„ í•´ë‹¹ ê²½ë¡œë¡œ ì´ë™
+> pm2 deploy ecosystem.config.js pr setup
+ëª‡ì°¨ë¡€ ë¹„ë°€ë²ˆí˜¸ ì…ë ¥
+
+
+*****--> ë°°í¬ ì‹¤íŒ¨ë¡œ ì¸í•´ì„œ ì´í›„ ë‹¨ê³„ ë¯¸ì§„í–‰
+* ë¦¬ëˆ…ìŠ¤ ë¶€íŒ… ì‹œ pm2 ìë™ ì‹¤í–‰
+> pm2 startup
+
+- solarmonì´ ì‹¤í–‰ì¤‘ì¸ì§€ í™•ì¸ í›„ ìƒíƒœ ì €ì¥
+> pm2 status
+> pm2 save
+
+- ë¦¬ëˆ…ìŠ¤ ë¦¬ë¶€íŒ…
+> reboot
+
+- pm2 í™•ì¸
+> pm2 status
