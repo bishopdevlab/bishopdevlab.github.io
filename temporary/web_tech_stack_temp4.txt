@@ -1,0 +1,186 @@
+﻿제작 고급편
+
+--> 강좌만 보고 실습은 스킵
+
+59. 비밀번호 암호화하기
+60. 뷰 컴포넌트 사용하기
+61. 시간 계산하기(moment)
+시간 관련 컴포넌트 moment를 fe/be 모두에 설치
+> cd fe
+> yarn add moment
+> cd be
+> yarn add moment
+
+62. 로그인 시간 제한하기(토큰 갱신)
+- Local Storage는 로그아웃을 하지 않으면 사라지지 않음
+63. 게시판 관리 만들기
+64. 게시판 모델 만들기(populate)
+65. 게시판을 위한 메뉴 구성
+66. 게시판 정보 읽기
+67. 게시판 게시물 API 만들기
+68. 게시판 게시물 쓰고 읽기
+69. 게시판 뷰티파이 테이블 사용하기
+70. 게시판 내용 읽기
+71. 게시판 내용 수정과 삭제
+72. 게시판 페이징과 정렬 처리하기
+73. 게시판 재활용하기(뷰라우터)
+74. 공용 알림 메세지 만들기(vuex)
+75. HTTP 예외처리 제대로 하기
+76. 반응형 게시판 만들기
+77. 구글 리캡챠로 로봇 막아보기(recaptcha)
+> cd fe
+> yarn add vue-recaptcha
+78. 고급편 정리
+
+
+
+
+모던웹(NEMV) 제작 활용편
+
+79. 보안연결(ssl) 적용하기
+- 저자는 유료 서비스인 GoDaddy 사용
+- Let's Encrypt 무료
+80. 구글 애널리틱스로 사이트 현황 파악하기
+81. 대시보드 게시판 다르게 표현하기
+
+82. 대시보드 꾸며보기
+* trend 차트 모듈 설치
+> cd fe
+> yarn add vuetrend
+
+83. 파일 업로드 하기(multer)
+* 파일 업로드 - multer 모듈 설치
+> cd be
+> yarn add multer
+
+84. 이미지 변환하기(base64, sharp)
+* base64-img (이미지를 문자열 버퍼로 변환해주는 모듈) 설치
+> cd be
+> yarn add base64-img
+* 이미지 용량 줄이기 - sharp 모듈 설치
+> cd be
+> yarn add sharp
+* 이미지를 버퍼로 처리하는 프라미스형 모듈 사용
+> cd be
+> yarn add image-data-url
+
+85. 이미지 컴포넌트로 업로드하기(filepond)
+* 이미지 업로드 - filepond 모듈 설치
+> cd fe
+> yarn add filepond vue-filepond filepond-plugin-file-validate-type filepond-plugin-image-preview
+  플러그인도 함께 설치해야 코드가 동작됨
+
+86. 사용자 정보 표시하기
+87. 위지웍 에디터 사용하기(toast ui editor)
+* toast-ui/vue-editor 설치 (NHNEnter의 tui-editor의 vue wrapper 버전)
+> cd fe
+> yarn add @toast-ui/vue-editor
+
+88. 게시물에 댓글 추가하기
+89. 활용편 정리
+90. 보너스 - 알림창 쉽게 구현하기 (vuetify-dialog)
+> cd fe
+> yarn add vuetify-dialog
+
+91. 국제화 쉽게 구현하기(vue-i18n)
+> cd fe
+> vue add i18n --> 질문에는 모두 기본값으로 설치
+-------------------- END --------------------
+
+
+
+2020.5.14 도윤이의 6번째 생일날. 전체 강좌의 학습을 마무리함.^^
+2020년 3월 5일 처음 시작해서 5월 14일 전체 강좌를 학습했습니다.
+제작 응용 사용자편 "49 뷰저장소(vuex) 이정도만 쓰자" 까지는 실제로 코드를 작성해보며 진행했고,
+이후부터는 강좌 및 동영상을 보면서 학습을 했습니다. (저자도 미리 코드를 작성해 놓고 설명 및 완성하는 방식으로 진행)
+밤 시간을 쪼개며 때론 졸면서 공부를 했지만, 90개의 모든 강좌를 이수했다는 것에 의미를 둡니다.
+강좌를 통해서 이렇게 사용하는구나 정도의 감을 얻었고,
+이제 제공되는 소스를 기반으로 제가 만들어야 하는 사이트를 실제로 만들면서 익힐 수 있을 것입니다.
+직접 부딛혀 보는 것이  확실히 익히는 법이죠.
+
+
+
+
+
+
+
+--- 강좌 최종 소스 반영하기 ---
+* be 누락된 모듈 설치
+> cd be
+> yarn add axios
+> yarn add image-data-uri
+> yarn add multer
+> yarn add request
+> yarn add sharp
+
+
+* fe 누락된 모듈 설치
+> cd fe
+> yarn add @toast-ui/vue-editor
+
+> yarn add filepond vue-filepond filepond-plugin-file-validate-type filepond-plugin-image-preview
+--> 빌드 에러로 인해 filepond 관련 패키지를 강좌버전으로 재설치
+> yarn remove filepond vue-filepond filepond-plugin-file-validate-type filepond-plugin-image-preview
+> yarn add filepond@3.5.0 vue-filepond@4.0.2 filepond-plugin-file-validate-type@1.2.0 filepond-plugin-image-preview@3.1.4
+
+> vue add i18n --> 질문에는 모두 기본값으로 설치
+> yarn add vuetify-dialog
+> yarn add vue-analytics
+> yarn add vue-plugin-load-script
+> yarn add stylus stylus-loader style-loader css-loader -D
+
+
+
+
+* 빌드하기
+> cd solarmon
+> yarn
+> cd be
+> yarn
+> cd ../fe
+> yarn
+> yarn build
+
+--> 빌드 에러 해결
+1) toast-ui/vue-editor 버전 문제
+ - 강좌에서는 1.x 버전을 사용했으나 최신 버전은 2.x 버전으로 사용법이 좀 상이함
+참고. https://github.com/nhn/tui.editor/blob/master/apps/editor/docs/v2.0-migration-guide-ko.md
+//import 'tui-editor/dist/tui-editor.css'
+//import 'tui-editor/dist/tui-editor-contents.css'
+-> 아래처럼 변경
+import '@toast-ui/editor/dist/toastui-editor.css';
+
+2) This relative module was not found:
+* ../config in ./src/main.js
+
+import cfg from '../config' --> 로컬에는 fe/config 폴더가 없어서 발생한 문제
+config에는 아래와 같이 3가지 설정 정보를 가지고 있음
+module.exports = {
+  recaptchaSiteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+  analyticsID: 'UA-93372301-1',
+  httpsOnly: false
+}
+
+3) filepond 빌드 에러 발생
+-> 강좌 버전으로 재설치
+
+4) stylus-loader 모듈이 없어서 에러 발생
+-> 모듈 설치
+
+5) Google reCAPTCHA 사용
+Google reCAPTCHA 접속 후 사이트에 reCAPTCHA 추가
+
+> reCAPTCHA를 위한 사이트 키, 비밀키가 생성됨
+- 사이트 키
+fe/config/index.js 설정
+module.exports = {
+  recaptchaSiteKey: 'xxx',
+ }
+- 비밀키
+be/config/index.js 설정
+module.exports = {
+  recaptchaSecretKey: 'xxx'
+}
+
+6) SSL 적용 (Let's Encrypt)
+

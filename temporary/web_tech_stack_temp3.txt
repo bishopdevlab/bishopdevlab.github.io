@@ -4,8 +4,196 @@
 37. 몽고 클라우드(ATLAS) 가입 및 테스트 => 생략. 추후 필요 시 사용하기로 함
 
 38. 깃헙에서 안보이는 설정파일 만들기
+* config 파일 만들기
+> cd /var/www/solarmon
+- config/index.js 파일 생성
+module.exports = {
+  dbUrl: 'mongodb://localhost:27017/solarmon',
+}
+
+* gitignore 등록
+- .gitignore 파일 수정
+# config
+config/
+
+* config 파일 읽어서 DB 연결하기
+- be/app.js 파일 수정
+
+const cfg = require('../config')
+console.log(cfg)
+
+mongoose.connect(cfg.dbUrl, { useNewUrlParser: true }, (err) => {
+  if (err) return console.error(err)
+  console.log('mongoose connected!')
 
 
 
+39. API 미들웨어란?
+* 미들웨어 만들기
+- routes/api/index.js 수정
+var express = require('express');
+var createError = require('http-errors');
+var router = express.Router();
+
+router.all('*', function(req, res, next) {  
+  if (req.path === '/xxx') return res.send({ msg: '보안상 여긴 못와요!' })
+  next()
+});
+
+router.use('/test', require('./test'))
 
 
+
+40 토큰(JWT)이란?
+
+* JWT (JSON Web Token) 설치
+> cd be
+> yarn add jsonwebtoken
+-> NCP, Local 모두 설치했음
+
+* 토큰 만들기
+- be/app.js
+const jwt = require('jsonwebtoken');
+const key = '베리베리어려운키'
+const token = jwt.sign({ id: 'solarmon', email: 'solarmon@xxx.com' }, key);
+console.log(token)
+
+* 토큰 풀기
+- be/app.js
+const decoded = jwt.verify(token, key) 
+console.log(decoded) 
+console.log(new Date(decoded.iat * 1000).toLocaleString())
+-> iat는 토큰의 발생시간
+-> exp는 유효기간 설정
+
+* 동기식 함수의 문제
+- 잘못된 키로 토큰을 푸는 경우 백엔드 서버가 종료됨 -> 콜백지원 함수를 사용함
+- be/app.js
+// const decoded = jwt.verify(token, key) 
+// console.log(decoded) 
+// console.log(new Date(decoded.iat * 1000).toLocaleString())
+jwt.verify(token, 'ㄴㄹㅈㄷㄹ', (err, r) => {
+  if (err) return console.error(err.message) 
+  // invalid signature
+  console.log(r) // bar
+  console.log(new Date(r.iat * 1000).toLocaleString())
+})
+
+
+41 프라미스(promise) 어씽크(async) 이정도만 하자!
+- 강좌 보고 이해만 하자. 실습은 스킵~
+
+42 HTTP 헤더 알아보기
+- 강좌 보고 이해만 하자. 실습은 스킵~
+
+43 사이트 저장소 다루기
+- 강좌 보고 이해만 하자. 실습은 스킵~
+
+44 로그인 간단히 만들어보기
+* 로그인 임시 API 만들기
+- be/routes/api/sign/index.js 파일 생성 (강좌 코드 사용)
+
+- be/routes/api/index.js 파일에 sign 추가
+router.use('/sign', require('./sign'))
+router.all('*', function(req, res, next) {
+  // 토큰 검사
+  next() 
+});
+
+* 로그인 화면 만들기
+- fe/src/views/sign.vue 파일 생성 (강좌 코드 사용)
+- fe/src/router.js 파일에 sign 추가 
+{
+      path: '/sign',
+      name: '로그인',
+      component: () => import('./views/sign.vue')
+    },
+
+* 테스트
+- be/fe 실행
+> cd /var/www/solarmon/
+> yarn dev
+> yarn serve
+
+- 접속 확인
+http://localhost:8080/sign 접속 > 임의의 ID/PWD 입력 > 크롬 디버깅 툴 > console에서 sucess: true 출력 확인
+
+
+45 사용자 모델 정리하기
+* 몽구스 워닝메세지 제거
+- yarn dev로 실행 시 몽구스 경고 메시지가 출력 시 경고 메시지 off
+- be/models/users.js
+mongoose.set('useCreateIndex', true)
+User.findOne({ id: cfg.admin.id })~ 내용 추가
+
+* 계정 컬럼 추가
+- be/models/users.js
+id, pwd, retry 추가
+
+* 쓰레기 인덱스 정리
+- be/models/users.js
+User.collection.dropIndexes({ name: 1 })
+
+* 어드민 계정 설정 준비
+- config/index.js
+  admin: {
+    id: 'admin',
+    pwd: '1234',
+    name: '관리자'
+  }
+
+* 실행 확인하기
+> yarn dev
+admin:admin created! 콘솔에 출력됨
+재실행
+> yarn dev
+이미 있으므로 null 리턴하여 아무것도 출력되지 않음
+
+
+46 실제 데이터로 로그인하기
+* 토큰 발행 시 사용될 보안키 설정값에 추가하기
+- config/index.js
+secretKey: 'abcdefg'
+
+* 토큰 발행 함수 작성
+- be/routes/api/sign/index.js
+
+* 로그인 라우터 변경하기
+- be/routes/api/sign/index.js
+
+* 실행 확인
+> yarn dev
+> yarn serve
+- http://localhost:8080/sign > admin/1234 입력 > 로그인 > 콘솔에 success: true, token 확인
+
+
+
+47 토큰 인증하기
+48 로그인 해야 들어갈 수 있는 페이지 만들기
+49 뷰저장소(vuex) 이정도만 쓰자
+--> 강좌만 보고 이해하고 실습은 스킵. 소스코드 다운로드해서 코드 확인 및 동작 확인
+--> 강좌의 커밋 히스토리에서 "49 로그인/아웃 표현 추가" 코드를 다운로드해서 기존 코드를 덮어씀
+
+
+--> 강좌만 보고 실습은 스킵
+50 사용자 및 페이지 관리하기
+51 백엔드로 페이지 권한 얻기
+52 모든 요청 토큰 설정으로 접근 막기
+53 새로고침 없이 로그인 하기(by 인터셉터)
+54 한 소스로 사이트 다르게 사용하기
+55 회원가입 유효성 판단
+* 폼 입력값의 유효성을 판단하는 써드파티 컴포넌트 사용
+- vee-validate 설치
+> cd fe
+> yarn add vee-validate
+--> NCP, Local 모두 설치했음
+
+56 회원가입 프론트 적용하기
+* Localization (한글과 처리)
+
+57 회원가입 완성하기
+--> 강좌만 보고 실습은 스킵
+
+
+58 사용자편 정리
+- 강좌 링크 및 시연 동영상
