@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby update에 따른 Github Pages 업데이트
-subtitle: Ruby 업데이트 후 로컬에서의 Jekyll github page를 실행시키기
+subtitle: Ruby 업데이트 후 로컬에서 Jekyll github page를 실행시키기
 tags: [Github Pages, Markdown, Ruby, Jekyll]
 image: /assets/images/2022-04-05-update-jekyll-page/ruby_jekyll.png
 comments: true
