@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Free Note
-subtitle: About everything in the world
+title: Resume
+subtitle: 이력서
 use-site-title: true
 ---
+
 <div class="posts-list">
-  {% assign posts = site.Free_Note | sort:"date" | reverse %}
+  {% assign posts = site.Resume | sort:"date" | reverse %}
   {% for post in posts %}
     {% if post.url contains 'index' %}
       {% continue %}

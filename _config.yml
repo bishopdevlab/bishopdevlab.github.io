@@ -2,10 +2,10 @@
 
 collections_dir: collections
 collections:
-  Free_Note:
+  Development:
     output: true
     permalink: /:collection/:name
-  Development:
+  Resume:
     output: true
     permalink: /:collection/:name
   Portfolio:
@@ -31,7 +31,7 @@ baseurl: ""
 title: Bishop's Development Lab
 
 # Short description of your site
-description: Here, you'll find out much about me.
+description: Lee Yong-il, Principal software engineer.
 
 # --- Navigation bar options --- #
 
@@ -39,8 +39,8 @@ description: Here, you'll find out much about me.
 navbar-links:
   Home: "index"
   Blog:
-    - Free Note: Free_Note
     - Development: Development
+    - Resume: Resume
     - Portfolio: Portfolio
   About Me: "aboutme"
 
@@ -171,7 +171,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Asia/Seoul"
+# timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
