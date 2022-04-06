@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Senior Software Engineer
+title: Portfolio
+subtitle: 포트폴리오
 ---
 
 ## Profile
@@ -9,5 +9,5 @@ subtitle: Senior Software Engineer
 | Location      | Korea, Republic of                                                        |
 | e-mail        | dbjavapia@gmail.com                                                       |
 | Github        | [https://github.com/bishopdevlab](https://github.com/bishopdevlab)        |
-| Blog (prev.)  | [https://bishopdevlab.github.io/](https://bishopdevlab.github.io/)        |
+| Blog          | [https://bishopdevlab.github.io/](https://bishopdevlab.github.io/)        |
 
