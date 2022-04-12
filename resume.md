@@ -35,8 +35,6 @@ tr, td, th {
 
 ### SKILL
 
-3: 고급 활용 가능, 2: 중급 활용 가능, 1: 기초 수준
-
 | **Domain&nbsp;Knowledge** | | |
 | | | 의료기기 (Medical Device), 초음파 진단기기 개발 |
 | | | 원격 탐사 (Remote Sensing), 인공위성 지상국 시스템 개발 |
@@ -46,23 +44,63 @@ tr, td, th {
 | | | Principal Software Engineer@Samsung Healthcare |
 | | | Software Developer, Software Architect, Project Leader |
 | **Language** | | |
-| | | C# (3), C++ (2), Delphi (3), Java (1) |
-| | | JSP (2), ASP (1), PHP (1), Node.js (1), Vue.js (1), Express.js (1) |
+| | | C# (3), MFC/C++ (2), Delphi (3), Java (1) |
+| | | JSP/ASP/PHP (2), Node.js (1), Vue.js (1), Express.js (1) |
 | | | Xamarin (1), Flutter (1) |
 | **Database** | | |
 | | | MS-SQL Server (2), ORACLE (2), SQLite (1), MongoDB (1) |
 | **Image&nbsp;Processing** | | |
-| | | GDI+ (3), WPF (3), OpenCV (2), OpenGL (2), AForge.NET (2), GDAL (1)  |
-| | | ENVI (2), ERDAS IMAGINE (1), ArcGIS (1) |
+| | | GDI+ (3), WPF (3), OpenCV (2), OpenGL (2) |
 | **Modeling** | | |
-| | | UML (3), IBM Rational Modeler (3), StarUML (3), IBM DOORS (2) |
+| | | UML (3), Rational Modeler (3), StarUML (3), IBM DOORS (2) |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | |
+
+* <font size=2>3: 고급 활용 가능, 2: 중급 활용 가능, 1: 기초 수준</font>
 
 ***
-
 ### EXPERIENCE
+
+| **<font size=4>2013.05 - 현재</font>** | | **<font size=4>삼성메디슨</font>** |
+| | | 수석연구원 |
+| | | 초음파 진단기 제품 개발<br>초음파 진단기 선행 연구 |
+| | | |
+| **<font size=4>2006.05 - 2013.04</font>** | | **<font size=4>쎄트렉아이</font>** |
+| | | 선임연구원 |
+| | | -- 중고도 무인항공기 지상체 영상분석장비 개발<br>-- 인공위성 지상국 수신처리시스템 개발<br>-- 인공위성 시뮬레이터 개발<br>-- 멀티센서 영상 통합처리 기술 개발 |
+| | | |
+| **<font size=4>2003.06 - 2006.02</font>** | | **<font size=4>한국항공우주연구원</font>** |
+| | | 연구원 |
+| | | -- 인공위성 영상 관련 응용 프로그램 개발<br>-- 위성영상 수신처리 시스템 DB 구축/관리 |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | |
 
 ***
 
 ### PROJECT
+
+| **<font size=4>삼성메디슨</font>** | | |
+| <font size=3>초음파 영상진단기 개발<br>2013.05 - 현재</font> | | 2015.11 - 2016.10, 2020.06 - 현재<br>초음파 영상진단기 신제품 개발 (C# 플랫폼)<br>[V8](https://samsunghealthcare.com/kr/products/UltrasoundSystem/V8/General%20Imaging/benefit), [HS60](https://samsunghealthcare.com/kr/products/UltrasoundSystem/HS60/General%20Imaging/benefit), [HS50](https://samsunghealthcare.com/kr/products/UltrasoundSystem/HS50/General%20Imaging/benefit)<br>업무: Measurement 모듈 개발<br>성과: C# 플랫폼 팀 소속, 지연 상황에서 제품 출시 기여, 우수 고과<br>Tech Stack: C#(App), C++(Algorithm), WPF, MVVM, WCF, Git, JIRA, Jenkins |
+| | | |
+| | | 2013.05 - 2015.10, 2016.12 - 2017.10<br>초음파 영상진단기 신제품 개발 (Delphi 플랫폼)<br>[RS85](https://samsunghealthcare.com/kr/products/UltrasoundSystem/RS85%20Prestige/Radiology/benefit), [RS80A](https://samsunghealthcare.com/kr/products/UltrasoundSystem/RS80A/Radiology/benefit), [WS80A](https://samsunghealthcare.com/kr/products/UltrasoundSystem/WS80A/Obstetrics%20-%20Gynecology/benefit)<br>업무: Imaging Control 모듈 개발, Measurement 모듈 개발<br>최초 프리미엄 제품 출시, 64bit Migration TF<br>Tech Stack: Delphi(App), C++(Algorithm), SVN, JIRA |
+| | | |
+| | | 2017.11 - 2020.05<br>선행연구 (선행개발팀 소속)<br>New feature 발굴<br>업무: 태아 얼굴 복원 (Inpainting Deep-learning), 프로브 자동 인식, 음성/제스처 인식, 테블릿 제어, MSK Application<br>Tech Stack: C#, Delphi, C++, OpenCV, TensorFlow, PyTorch, Xamarin, WebSocket |
+| | | |
+| **<font size=4>쎄트렉아이</font>** | | |
+| <font size=3>영상처리<br>인공위성 지상국 개발<br>무인항공기 지상국 개발<br>2006.05 - 2013.04</font> | | 2009.01 - 2012.12<br>중고도 무인항공기 지상체 영상분석장비 개발<br>발주처: 국방과학연구소(ADD)<br>업무: 비행체의 영상 수신/처리/분석/판독 모듈 개발<br>성과: PL/SW 개발 리드, Software Architect, 모듈 개발<br>Tech Stack: C#, C++, Winform, DevExpress, UML, OpenGL, MS-TFS |
+| | | |
+| | | 2006.05 - 2009.12<br>멀티센서 영상처리 기술 개발<br>발주처: 한국전자통신연구원(ETRI)<br>업무: 멀티센서 삼각측량 S/W 개발, 위성영상/항공사진 등을 사용한 고부가 영상처리 S/W 개발<br>성과: PL, 영상처리 모듈 개발, 논문 게재<br>Tech Stack: MFC, C++, COM+, UML |
+| | | |
+| | | 2007.10 - 2008.12<br>천리안 인공위성 시뮬레이터 개발<br>발주처: 한국전자통신연구원(ETRI)<br>업무: 천리안 인공위성(COMS) 시뮬레이터 S/W 설계 및 개발<br>성과: 모듈 개발, 위성 지상 검증에 활용<br>Tech Stack: C#, GDI+, OpenGL, ComponentOne, UML |
+| | | |
+| | | 2007.01 - 2007.12<br>아리랑3호 위성 수신처리 시스템 개발<br>발주처: 한국항공우주연구원(KARI)<br>업무: 웹 기반 지도 컴포넌트 개발, 다중 밴드 위성영상의 Band Misalignment 측정 S/W 개발<br>성과: 웹 지도 컴포넌트 개발, 위성 초기운용에 활용<br>Tech Stack: C#, ASP.NET, MS-SQL, ArcGIS |
+| | | |
+| **<font size=4>한국항공주우연구원</font>** | | |
+| <font size=3>웹 표출 시스템 개발<br>수신처리 시스템 개발<br><br>2006.05 - 2013.04</font> | | 2004.01 - 2004.12<br>위성영상 통합 검색 시스템 개발<br>발주처: 한국항공우주연구원(KARI)<br>업무: 위성영상 통합 검색 시스템 개발<br>성과: 시스템 개발 및 운용<br>Tech Stack: JSP, JAVA, MS-SQL, Spatial Map Server |
+| | | |
+| | | 2004.04 - 2004.04<br>국가간 위성영상자료 공동활용<br>발주처: 한국항공우주연구원(KARI)<br>업무: 위성영상 메타데이터 국제표준(ISO-19115) 스키마 개발, ESA eoportal 웹 서비스 연계<br>성과: XML 웹 서비스 개발 및 외부 시스템 연계<br>Tech Stack: XML, XSD, XSLT, Java Web Service |
+| | | |
+| | | 2003.06 - 2003.12<br>위성영상 웹 표출 시스템 개발<br>발주처: 한국항공우주연구원(KARI)<br>업무: 영상/기상정보 웹 표출 시스템 개발<br>성과: ArcIMS 지도 서버 활용 개발, 대용량 이미지 데이터 전시<br>Tech Stack: JSP, JAVA, MS-SQL, ArcIMS |
+| | | |
+| | | 2003.06 - 2006.02<br>지상국 시스템 운영<br>발주처: 한국항공우주연구원(KARI)<br>업무: 수신처리시스템 DB 관리, 응용 SW 개발<br>성과: 수신처리 시스템 운영, 어플리케이션 개발<br>Tech Stack: UNIX, ORACLE, MS-SQL, VC++, JAVA |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | |
 
 ***
