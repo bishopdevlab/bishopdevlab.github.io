@@ -94,7 +94,7 @@ tr, td, th {
 | | | 2007.01 - 2007.12<br>아리랑3호 위성 수신처리 시스템 개발<br>발주처: 한국항공우주연구원(KARI)<br>업무: 웹 기반 지도 컴포넌트 개발, 다중 밴드 위성영상의 Band Misalignment 측정 S/W 개발<br>성과: 웹 지도 컴포넌트 개발, 위성 초기운용에 활용<br>Tech Stack: C#, ASP.NET, MS-SQL, ArcGIS |
 | | | |
 | **<font size=4>한국항공주우연구원</font>** | | |
-| <font size=3>웹 표출 시스템 개발<br>수신처리 시스템 개발<br><br>2006.05 - 2013.04</font> | | 2004.01 - 2004.12<br>위성영상 통합 검색 시스템 개발<br>발주처: 한국항공우주연구원(KARI)<br>업무: 위성영상 통합 검색 시스템 개발<br>성과: 시스템 개발 및 운용<br>Tech Stack: JSP, JAVA, MS-SQL, Spatial Map Server |
+| <font size=3>웹 표출 시스템 개발<br>수신처리 시스템 개발<br><br>2003.06 - 2006.02</font> | | 2004.01 - 2004.12<br>위성영상 통합 검색 시스템 개발<br>발주처: 한국항공우주연구원(KARI)<br>업무: 위성영상 통합 검색 시스템 개발<br>성과: 시스템 개발 및 운용<br>Tech Stack: JSP, JAVA, MS-SQL, Spatial Map Server |
 | | | |
 | | | 2004.04 - 2004.04<br>국가간 위성영상자료 공동활용<br>발주처: 한국항공우주연구원(KARI)<br>업무: 위성영상 메타데이터 국제표준(ISO-19115) 스키마 개발, ESA eoportal 웹 서비스 연계<br>성과: XML 웹 서비스 개발 및 외부 시스템 연계<br>Tech Stack: XML, XSD, XSLT, Java Web Service |
 | | | |
