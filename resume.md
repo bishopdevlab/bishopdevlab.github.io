@@ -12,6 +12,15 @@ subtitle: Principal Software Engineer
 img {
     vertical-align: middle;
 }
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 60%;
+}
 </style>
 
 ### 이용일 (Yongil Lee)
@@ -58,9 +67,8 @@ img {
 | **Modeling** | | |
 | | | UML Modeling (3), IBM Rational Modeler (3), StarUML (3) |
 | | | IBM DOORS (2) |
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-mm
+zz
 
 ***
 
