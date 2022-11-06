@@ -40,10 +40,10 @@ img {
 ### TECHNICAL SKILLS
 
 | **Domain&nbsp;Knowledge** | | |
-| | | 의료기기 초음파 영상진단기 개발 |
-| | | 원격 탐사 인공위성 지상국 시스템 개발 |
-| | | 방위산업 무인항공기 지상국 시스템 개발 |
-| | | 영상처리 삼각측량, 센서모델링, 표준영상 |
+| | | 의료기기 &#8211; 초음파 영상진단기 개발 |
+| | | 원격 탐사  &#8211; 인공위성 지상국 시스템 개발 |
+| | | 방위산업 &#8211; 무인항공기 지상국 시스템 개발 |
+| | | 영상처리 &#8211; 삼각측량, 센서모델링, 표준영상 |
 | **Role** | | |
 | | | Principal Software Engineer@Samsung Healthcare |
 | | | Software Developer, Software Architect, Project Leader |
