@@ -16,12 +16,12 @@ img {
 
 ### 이용일 (Yongil Lee)
 
-* <img src="assets/images/resume/location-dot-solid.png" width=15/>&nbsp;&nbsp;&nbsp;Republic of Korea
-* <img src="assets/images/resume/envelope-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[dbjavapia@gmail.com](dbjavapia@gmail.com)
-* <img src="assets/images/resume/linkedin.png" width=15/>&nbsp;&nbsp;&nbsp;[https://www.linkedin.com/in/bishop201](https://www.linkedin.com/in/bishop201)
-* <img src="assets/images/resume/github.png" width=15/>&nbsp;&nbsp;&nbsp;[https://github.com/bishopdevlab](https://github.com/bishopdevlab)
-* <img src="assets/images/resume/user-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/resume](https://bishopdevlab.github.io/resume)
-* <img src="assets/images/resume/folder-open-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/portfolio](https://bishopdevlab.github.io/portfolio)
+* <img src="/assets/images/resume/location-dot-solid.png" width=15/>&nbsp;&nbsp;&nbsp;Republic of Korea
+* <img src="/assets/images/resume/envelope-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[dbjavapia@gmail.com](dbjavapia@gmail.com)
+* <img src="/assets/images/resume/linkedin.png" width=15/>&nbsp;&nbsp;&nbsp;[https://www.linkedin.com/in/bishop201](https://www.linkedin.com/in/bishop201)
+* <img src="/assets/images/resume/github.png" width=15/>&nbsp;&nbsp;&nbsp;[https://github.com/bishopdevlab](https://github.com/bishopdevlab)
+* <img src="/assets/images/resume/user-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/resume](https://bishopdevlab.github.io/resume)
+* <img src="/assets/images/resume/folder-open-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/portfolio](https://bishopdevlab.github.io/portfolio)
 
 ***
 
@@ -40,25 +40,24 @@ img {
 ### SKILL
 
 | **Domain&nbsp;Knowledge** | | |
-| | | 의료기기 (Medical Device), 초음파 진단기기 개발 |
-| | | 원격 탐사 (Remote Sensing), 인공위성 지상국 시스템 개발 |
-| | | 방위산업 (Defence), 무인항공기 지상국 시스템 개발 |
-| | | 영상처리 (Image Processing) |
+| | | 의료기기 - 초음파 영상진단기 개발 |
+| | | 원격 탐사 - 인공위성 지상국 시스템 개발 |
+| | | 방위산업 - 무인항공기 지상국 시스템 개발 |
+| | | 영상처리 - 삼각측량, 센서모델링, 표준영상 |
 | **Role** | | |
 | | | Principal Software Engineer@Samsung Healthcare |
 | | | Software Developer, Software Architect, Project Leader |
 | **Language** | | |
 | | | C# (3), MFC/C++ (2), Delphi (3), Java (1) |
 | | | JSP/ASP/PHP (2), Node.js (1), Vue.js (1), Express.js (1) |
-| | | Xamarin (1), Flutter (1) |
+| | | Xamarin (2), Flutter (1) |
 | **Database** | | |
-| | | MS-SQL Server (2), ORACLE (2), SQLite (1), MongoDB (1) |
+| | | SQL Server (2), ORACLE (2), SQLite (2), MongoDB (1) |
 | **Image&nbsp;Processing** | | |
-| | | GDI+ (3), WPF (3), OpenCV (2), OpenGL (2) |
+| | | GDI+ (3), WPF (3), OpenCV (2), OpenGL (2), ENVI, ArgGIS |
 | **Modeling** | | |
-| | | UML (3), Rational Modeler (3), StarUML (3), IBM DOORS (2) |
+| | | UML Modeling (3), Rational Modeler (3), StarUML (3), IBM DOORS (2) |
 | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | |
-
 * <font size=2>3: 고급 활용, 2: 중급 활용, 1: 기초 활용</font>
 
 ***
