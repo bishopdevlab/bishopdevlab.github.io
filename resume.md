@@ -5,10 +5,6 @@ subtitle: Principal Software Engineer
 ---
 
 <style>
-tr, td, th {
-   border: none!important;
-   background-color:transparent!important;
-}
 img {
     vertical-align: middle;
 }
