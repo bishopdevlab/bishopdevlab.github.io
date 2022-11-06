@@ -57,9 +57,9 @@ img {
 | | | GDI+ (3), WPF (3), OpenCV (2), OpenGL (2), ENVI, ArgGIS |
 | **Modeling** | | |
 | | | UML Modeling (3), Rational Modeler (3), StarUML (3), IBM DOORS (2) |
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 
-tt
+ss
 
 ***
 
