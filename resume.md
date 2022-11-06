@@ -37,13 +37,13 @@ img {
 
 ***
 
-### SKILL
+### TECHNICAL SKILLS
 
 | **Domain&nbsp;Knowledge** | | |
-| | | 의료기기 - 초음파 영상진단기 개발 |
-| | | 원격 탐사 - 인공위성 지상국 시스템 개발 |
-| | | 방위산업 - 무인항공기 지상국 시스템 개발 |
-| | | 영상처리 - 삼각측량, 센서모델링, 표준영상 |
+| | | 의료기기 초음파 영상진단기 개발 |
+| | | 원격 탐사 인공위성 지상국 시스템 개발 |
+| | | 방위산업 무인항공기 지상국 시스템 개발 |
+| | | 영상처리 삼각측량, 센서모델링, 표준영상 |
 | **Role** | | |
 | | | Principal Software Engineer@Samsung Healthcare |
 | | | Software Developer, Software Architect, Project Leader |
@@ -58,10 +58,12 @@ img {
 | **Modeling** | | |
 | | | UML Modeling (3), Rational Modeler (3), StarUML (3), IBM DOORS (2) |
 | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | | |
+
 * <font size=2>3: 고급 활용, 2: 중급 활용, 1: 기초 활용</font>
 
 ***
-### EXPERIENCE
+
+### PROFESSIONAL EXPERIENCE
 
 | **<font size=4>2013.05 - 현재</font>** | | **<font size=4>삼성메디슨</font>** |
 | | | 수석연구원 |
