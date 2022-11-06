@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio(Unity)
+title: Portfolio
 subtitle: 포트폴리오
 ---
 
