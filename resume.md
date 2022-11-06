@@ -16,12 +16,12 @@ img {
 
 ### 이용일 (Yongil Lee)
 
-* <img src="/assets/images/resume/location-dot-solid.png" width=15/>&nbsp;&nbsp;&nbsp;Republic of Korea
-* <img src="/assets/images/resume/envelope-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[dbjavapia@gmail.com](dbjavapia@gmail.com)
-* <img src="/assets/images/resume/linkedin.png" width=15/>&nbsp;&nbsp;&nbsp;[https://www.linkedin.com/in/bishop201](https://www.linkedin.com/in/bishop201)
-* <img src="/assets/images/resume/github.png" width=15/>&nbsp;&nbsp;&nbsp;[https://github.com/bishopdevlab](https://github.com/bishopdevlab)
-* <img src="/assets/images/resume/user-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/resume](https://bishopdevlab.github.io/resume)
-* <img src="/assets/images/resume/folder-open-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/portfolio](https://bishopdevlab.github.io/portfolio)
+* <img src="assets/images/resume/location-dot-solid.png" width=15/>&nbsp;&nbsp;&nbsp;Republic of Korea
+* <img src="assets/images/resume/envelope-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[dbjavapia@gmail.com](dbjavapia@gmail.com)
+* <img src="assets/images/resume/linkedin.png" width=15/>&nbsp;&nbsp;&nbsp;[https://www.linkedin.com/in/bishop201](https://www.linkedin.com/in/bishop201)
+* <img src="assets/images/resume/github.png" width=15/>&nbsp;&nbsp;&nbsp;[https://github.com/bishopdevlab](https://github.com/bishopdevlab)
+* <img src="assets/images/resume/user-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/resume](https://bishopdevlab.github.io/resume)
+* <img src="assets/images/resume/folder-open-solid.png" width=15/>&nbsp;&nbsp;&nbsp;[https://bishopdevlab.github.io/portfolio](https://bishopdevlab.github.io/portfolio)
 
 ***
 
