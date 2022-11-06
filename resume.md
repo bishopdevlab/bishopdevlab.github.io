@@ -12,13 +12,13 @@ subtitle: Principal Software Engineer
 img {
     vertical-align: middle;
 }
-table th:first-of-type {
+.foo table td:first-of-type {
     width: 60%;
 }
-table th:nth-of-type(2) {
+.foo table td:nth-of-type(2) {
     width: 10%;
 }
-table th:nth-of-type(3) {
+.foo table td:nth-of-type(3) {
     width: 30%;
 }
 </style>
@@ -68,7 +68,7 @@ table th:nth-of-type(3) {
 | | | UML Modeling (3), IBM Rational Modeler (3), StarUML (3) |
 | | | IBM DOORS (2) |
 
-zz
+qq
 
 ***
 
