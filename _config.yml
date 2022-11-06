@@ -39,8 +39,8 @@ description: Yongil Lee, Principal software engineer.
 navbar-links:
   Blog:
     - Development: Development
-  Resume: "Resume"
-  Portfolio: "Portfolio"
+  Resume: "resume"
+  Portfolio: "portfolio"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
