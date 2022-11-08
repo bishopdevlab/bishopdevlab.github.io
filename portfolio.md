@@ -4,23 +4,52 @@ title: Portfolio
 subtitle: 포트폴리오
 ---
 
-![Slide1](/assets/images/portfolio/Slide1.PNG)
+### Table of Contents
+
+* [Profile](#Profile)
+* [Projects](#projects)
+* [초음파 영상진단기](#초음파-영상진단기)
+* [무인항공기](#무인항공기)
+* [인공위성](#인공위성)
+* [영상처리](#영상처리)
+
+---
+
+### Profile
+
+![Slide2](/assets/images/portfolio/Slide1.PNG)
 
 ![Slide2](/assets/images/portfolio/Slide2.PNG)
 
 ![Slide3](/assets/images/portfolio/Slide3.PNG)
 
+[go to TOCs](#table-of-contents)
+
+### Projects
+
 ![Slide4](/assets/images/portfolio/Slide4.PNG)
+
+[go to TOCs](#table-of-contents)
+
+### 초음파 영상진단기
 
 ![Slide5](/assets/images/portfolio/Slide5.PNG)
 
 ![Slide6](/assets/images/portfolio/Slide6.PNG)
+
+[go to TOCs](#table-of-contents)
+
+### 무인항공기
 
 ![Slide7](/assets/images/portfolio/Slide7.PNG)
 
 ![Slide8](/assets/images/portfolio/Slide8.PNG)
 
 ![Slide9](/assets/images/portfolio/Slide9.PNG)
+
+[go to TOCs](#table-of-contents)
+
+### 인공위성
 
 ![Slide10](/assets/images/portfolio/Slide10.PNG)
 
@@ -34,28 +63,12 @@ subtitle: 포트폴리오
 
 ![Slide15](/assets/images/portfolio/Slide15.PNG)
 
+[go to TOCs](#table-of-contents)
+
+### 영상처리
+
 ![Slide16](/assets/images/portfolio/Slide16.PNG)
 
 ![Slide17](/assets/images/portfolio/Slide17.PNG)
 
-![Slide18](/assets/images/portfolio/Slide18.PNG)
-
-![Slide19](/assets/images/portfolio/Slide19.PNG)
-
-![Slide20](/assets/images/portfolio/Slide20.PNG)
-
-![Slide21](/assets/images/portfolio/Slide21.PNG)
-
-![Slide22](/assets/images/portfolio/Slide22.PNG)
-
-![Slide23](/assets/images/portfolio/Slide23.PNG)
-
-![Slide24](/assets/images/portfolio/Slide24.PNG)
-
-![Slide25](/assets/images/portfolio/Slide25.PNG)
-
-![Slide26](/assets/images/portfolio/Slide26.PNG)
-
-![Slide27](/assets/images/portfolio/Slide27.PNG)
-
-![Slide28](/assets/images/portfolio/Slide28.PNG)
+[go to TOCs](#table-of-contents)
