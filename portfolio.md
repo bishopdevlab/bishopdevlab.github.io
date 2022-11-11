@@ -72,3 +72,6 @@ subtitle: 포트폴리오
 ![Slide17](/assets/images/portfolio/Slide17.PNG)
 
 [go to TOCs](#table-of-contents)
+
+
+Last Updated on November 2022
